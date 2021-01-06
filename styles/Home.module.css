@@ -78,6 +78,10 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .card {
@@ -119,4 +123,44 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.search input {
+  margin-right: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .search input {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .search input,
+  .search button {
+    width: 100px;
+  }
+}
+
+.profile {
+  display: flex;
+  margin-top: 2em;
+}
+
+.profile-image {
+  margin-right: 2em;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+  }
+  .profile-image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.back a {
+  color: blue;
+  text-decoration: underline;
 }
